@@ -23,6 +23,7 @@ body{
 
 .bcgd {
     transform: scale(0.8);
+    width: 50%;
 }
 
 .header_menu{
@@ -43,10 +44,11 @@ body{
     padding: 3% 0% 0% 15%;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 .apresentacao__conteudo{
-    width:500px;
+    width:50%;
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -96,4 +98,15 @@ body{
 
 }
 
-
+@media (max-width: 1200px) {
+    .header__menu{
+        justify-content: center;
+    }
+    .apresentacao{
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+    .apresentacao__conteudo{
+        width: auto;
+    }
+}
